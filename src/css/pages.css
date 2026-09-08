@@ -148,12 +148,6 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-  .about__media {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (min-width: 900px) {
   .about {
     grid-template-columns: 0.85fr 1.15fr;
