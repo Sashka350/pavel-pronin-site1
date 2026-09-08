@@ -1,0 +1,18 @@
+САЙТ ПАВЕЛА ПРОНИНА — ПУБЛИЧНЫЙ АДРЕС
+Обновлено: 01.09.2026
+
+Публичный адрес сайта (GitHub Pages):
+https://sashka350.github.io/pavel-pronin-site/
+
+Репозиторий (исходный код, публичный):
+https://github.com/Sashka350/pavel-pronin-site
+
+Как публиковать:
+- Любой push в ветку main репозитория автоматически собирает сайт
+  и публикует его на GitHub Pages (GitHub Actions).
+
+Замечание про будущий домен pavelpronin.me:
+- Сейчас сайт живёт на под-пути /pavel-pronin-site/. Когда появится
+  кастомный домен pavelpronin.me, в vite.config.js и scripts/page-template.js
+  нужно поменять BASE_PATH=/ и SITE_URL=https://pavelpronin.me, затем
+  пересобрать и запушть.

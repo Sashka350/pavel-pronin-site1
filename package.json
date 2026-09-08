@@ -1,0 +1,16 @@
+{
+  "name": "pavel-pronin-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Сайт-витрина Павла Пронина (pavelpronin.me)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node scripts/generate-performances.mjs && node scripts/generate-pedagogy.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

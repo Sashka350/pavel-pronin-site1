@@ -1,0 +1,79 @@
+/* ==========================================================================
+   ДИЗАЙН-СИСТЕМА
+   CSS custom properties для цветов, шрифтов, отступов, сетки.
+   Тёмная тема — по умолчанию. Светлая — через [data-theme="light"].
+   ========================================================================== */
+
+:root {
+  /* --- Типографика --- */
+  --font-body: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-hero: clamp(2.5rem, 8vw, 4rem);
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+
+  /* --- Сетка --- */
+  --container: 1200px;
+  --container-narrow: 820px;
+  --gap: 1.5rem;
+  --radius: 8px;
+  --radius-lg: 16px;
+
+  /* --- Брейкпоинты --- */
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1280px;
+
+  /* --- Переходы --- */
+  --transition: 0.3s ease;
+  --transition-fast: 0.15s ease;
+
+  /* --- Слои (z-index) --- */
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-lightbox: 300;
+
+  /* --- Тёмная тема (по умолчанию) --- */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+  --accent: #c8ff00;
+  --accent-hover: #b0e000;
+  --accent-contrast: #0a0a0a;
+  --border: #2a2a2a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --header-bg: rgba(10, 10, 10, 0.8);
+  --muted-bg: #141414;
+}
+
+/* --- Светлая тема --- */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #ebebeb;
+  --text-primary: #0a0a0a;
+  --text-secondary: #555555;
+  --text-muted: #999999;
+  --accent: #00aa00;
+  --accent-hover: #008800;
+  --accent-contrast: #ffffff;
+  --border: #e0e0e0;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --muted-bg: #f5f5f5;
+}
