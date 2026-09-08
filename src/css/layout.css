@@ -485,6 +485,10 @@ body.nav-open {
   margin-bottom: 1rem;
 }
 
+[data-theme="light"] .hero__overline {
+  color: #7A5C14;
+}
+
 .hero__title {
   font-family: var(--font-display);
   font-size: var(--text-hero);
