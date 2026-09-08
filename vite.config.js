@@ -16,6 +16,9 @@ export default defineConfig({
       input: {
         main: fileURLToPath(new URL('./index.html', import.meta.url)),
         en: fileURLToPath(new URL('./en/index.html', import.meta.url)),
+        enPerformances: fileURLToPath(new URL('./en/performances/index.html', import.meta.url)),
+        enPedagogy: fileURLToPath(new URL('./en/pedagogy/index.html', import.meta.url)),
+        enInscenizations: fileURLToPath(new URL('./en/inscenizations/index.html', import.meta.url)),
         performances: fileURLToPath(new URL('./performances/index.html', import.meta.url)),
         pedagogy: fileURLToPath(new URL('./pedagogy/index.html', import.meta.url)),
         inscenizations: fileURLToPath(new URL('./inscenizations/index.html', import.meta.url))

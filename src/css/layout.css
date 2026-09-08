@@ -684,12 +684,12 @@ body.nav-open {
 }
 
 /* --- ===== МОБИЛЬНЫЕ ФИКСЫ ===== --- */
-/* На планшетах и мобильных шапка не «липнет»: position: static убирает
-   застрявший при прокрутке пустой чёрный прямоугольник (iOS-баг рендера
-   sticky-шапки). Одновременно отключаем backdrop-filter и transform. */
+/* На планшетах и мобильных отключаем backdrop-filter и transform у sticky-шапки,
+   иначе iOS оставляет на месте прокрутки пустой чёрный прямоугольник. */
 @media (max-width: 1023px) {
   .header {
-    position: static;
+    position: sticky;
+    top: 0;
     background-color: var(--bg-primary);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;

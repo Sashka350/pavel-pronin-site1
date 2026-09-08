@@ -1,26 +1,28 @@
-﻿<!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Инсценировки — Павел Пронин</title>
+  <title>Performances — Pavel Pronin</title>
   <meta
     name="description"
-    content="Инсценировки Павла Пронина: от «Циников» Мариенгофа до «Капитанской дочки» Пушкина. Отрывки из работ и ссылки на тексты."
+    content="A catalog of performances by director Pavel Pronin: over 25 productions across Russia — from classics to contemporary drama."
   />
   <meta name="theme-color" content="#0C0C0C" />
-  <link rel="canonical" href="https://sashka350.github.io/pavel-pronin-site1/inscenizations/" />
+  <link rel="canonical" href="https://sashka350.github.io/pavel-pronin-site1/en/performances/" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Инсценировки — Павел Пронин" />
+  <meta property="og:title" content="Performances — Pavel Pronin" />
   <meta
     property="og:description"
-    content="Отрывки из инсценировок русской и зарубежной классики."
+    content="Over 25 productions across Russia — from classics to contemporary drama."
   />
-  <meta property="og:url" content="https://sashka350.github.io/pavel-pronin-site1/inscenizations/" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:site_name" content="Павел Пронин" />
+  <meta property="og:url" content="https://sashka350.github.io/pavel-pronin-site1/en/performances/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Pavel Pronin" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -32,27 +34,29 @@
 </head>
 
 <body>
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="/pavel-pronin-site1/" class="header__logo" data-type-cycle data-type-motion data-type="0">Павел Пронин</a>
+      <a href="/pavel-pronin-site1/en/" class="header__logo" data-type-cycle data-type-motion data-type="0">Pavel Pronin</a>
 
-      <nav class="header__nav" aria-label="Основная навигация">
+      <nav class="header__nav" aria-label="Main navigation">
         <ul>
-          <li><a class="nav-link" href="/pavel-pronin-site1/#about">Обо мне</a></li>
-          <li><a class="nav-link" href="/pavel-pronin-site1/performances/">Спектакли</a></li>
-          <li><a class="nav-link" href="/pavel-pronin-site1/pedagogy/">Педагогика</a></li>
-          <li><a class="nav-link is-active" href="/pavel-pronin-site1/inscenizations/" aria-current="page">Инсценировки</a></li>
+          <li><a class="nav-link" href="/pavel-pronin-site1/en/#about">About</a></li>
+          <li><a class="nav-link is-active" href="/pavel-pronin-site1/en/performances/" aria-current="page">Performances</a></li>
+          <li><a class="nav-link" href="/pavel-pronin-site1/en/pedagogy/">Pedagogy</a></li>
+          <li><a class="nav-link" href="/pavel-pronin-site1/en/inscenizations/">Stagings</a></li>
         </ul>
       </nav>
 
       <div class="header__actions">
-        <a class="lang-link telegram-link" href="https://t.me/pavelpronintheatre" target="_blank" rel="noopener" aria-label="Telegram-канал">
+        <a class="lang-link telegram-link" href="https://t.me/pavelpronintheatre" target="_blank" rel="noopener" aria-label="Telegram channel">
           <svg class="icon-telegram" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
         </a>
 
-        <a class="lang-link" href="/pavel-pronin-site1/en/inscenizations/" aria-label="English version">EN</a>
+        <a class="lang-link is-active" href="/pavel-pronin-site1/en/" aria-label="Russian version">EN</a>
+        <a class="lang-link" href="/pavel-pronin-site1/performances/" aria-label="Russian version">RU</a>
 
-        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Переключить тему">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle theme">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
@@ -69,7 +73,7 @@
           </svg>
         </button>
 
-        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
           <span></span>
           <span></span>
@@ -78,53 +82,71 @@
     </div>
   </header>
 
+  <!-- ===== MOBILE MENU ===== -->
   <div class="mobile-menu" id="mobile-menu">
-    <nav aria-label="Мобильная навигация">
+    <nav aria-label="Mobile navigation">
       <ul>
-        <li><a class="nav-link" href="/pavel-pronin-site1/#about">Обо мне</a></li>
-        <li><a class="nav-link" href="/pavel-pronin-site1/performances/">Спектакли</a></li>
-        <li><a class="nav-link" href="/pavel-pronin-site1/pedagogy/">Педагогика</a></li>
-        <li><a class="nav-link" href="/pavel-pronin-site1/inscenizations/">Инсценировки</a></li>
+        <li><a class="nav-link" href="/pavel-pronin-site1/en/#about">About</a></li>
+        <li><a class="nav-link" href="/pavel-pronin-site1/en/performances/">Performances</a></li>
+        <li><a class="nav-link" href="/pavel-pronin-site1/en/pedagogy/">Pedagogy</a></li>
+        <li><a class="nav-link" href="/pavel-pronin-site1/en/inscenizations/">Stagings</a></li>
       </ul>
     </nav>
   </div>
 
   <main>
+    <!-- ===== CATALOG HEADING ===== -->
     <section class="section page-head">
       <div class="container">
         <div class="page-head__inner animate-on-scroll">
-          <h1 class="page-head__title">Инсценировки</h1>
+          <h1 class="page-head__title">Performances</h1>
           <p class="page-head__lead">
-            Работы по превращению прозы в сценический текст. Отрывки из каждой
-            инсценировки доступны для чтения. Механика показа текстов (
-            Яндекс.Диск / чтение на сайте) уточняется.
+            All productions from 12 years of work. Those currently in the
+            repertoire are marked — along with information about the current season.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section section--tight" aria-labelledby="inscenizations-title">
+    <!-- ===== FILTERS ===== -->
+    <div class="container">
+      <div class="catalog-filters animate-on-scroll" data-catalog-filters>
+        <div class="catalog-filters__group">
+          <button class="chip is-active" type="button" data-filter-status="all">All</button>
+          <button class="chip" type="button" data-filter-status="live">In the repertoire</button>
+          <button class="chip" type="button" data-filter-status="archive">Archive</button>
+        </div>
+        <div class="catalog-filters__group" data-filter-years></div>
+      </div>
+    </div>
+
+    <!-- ===== CARDS GRID ===== -->
+    <section class="section section--tight" aria-labelledby="catalog-title">
       <div class="container">
-        <h2 class="visually-hidden" id="inscenizations-title">Список инсценировок</h2>
-        <ul class="inscenizations-list" data-inscenizations-list></ul>
+        <h2 class="visually-hidden" id="catalog-title">Catalog of performances</h2>
+        <div class="grid grid--catalog" data-catalog-grid></div>
+        <p class="catalog-empty is-hidden" data-catalog-empty>
+          Nothing found. Change the filter settings.
+        </p>
       </div>
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col">
-          <div class="footer__col-title">Павел Пронин</div>
+          <div class="footer__col-title">Pavel Pronin</div>
           <div class="footer__links">
-            <a href="/pavel-pronin-site1/performances/">Спектакли</a>
-            <a href="/pavel-pronin-site1/pedagogy/">Педагогика</a>
-            <a href="/pavel-pronin-site1/inscenizations/">Инсценировки</a>
+            <a href="/pavel-pronin-site1/en/performances/">Performances</a>
+            <a href="/pavel-pronin-site1/en/pedagogy/">Pedagogy</a>
+            <a href="/pavel-pronin-site1/en/inscenizations/">Stagings</a>
           </div>
         </div>
 
         <div class="footer__col">
-          <div class="footer__col-title">Контакты</div>
+          <div class="footer__col-title">Contacts</div>
           <div class="footer__links">
             <a href="mailto:pavel.pronin1986@gmail.com">pavel.pronin1986@gmail.com</a>
             <a href="tel:+79165671554">+7 916 567 15 54</a>
@@ -134,21 +156,21 @@
         </div>
 
         <div class="footer__col">
-          <div class="footer__col-title">Язык</div>
+          <div class="footer__col-title">Language</div>
           <div class="footer__links">
-            <a href="/pavel-pronin-site1/en/inscenizations/">English version</a>
+            <a href="/pavel-pronin-site1/performances/">Русская версия</a>
           </div>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <span>© 2026 Павел Пронин</span>
-        <span>Режиссёр · Педагог · Исследователь</span>
+        <span>© 2026 Pavel Pronin</span>
+        <span>Director · Teacher · Researcher</span>
       </div>
     </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
-  <script type="module" src="/src/js/inscenizations.js"></script>
+  <script type="module" src="/src/js/catalog-en.js"></script>
 </body>
 </html>
