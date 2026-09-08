@@ -322,13 +322,12 @@ body.nav-open {
   );
 }
 
-[data-theme="light"] .hero__bg::after {
-  background: linear-gradient(
-    to bottom,
-    rgba(250, 250, 248, 0.5) 0%,
-    rgba(250, 250, 248, 0.75) 55%,
-    var(--bg-primary) 100%
-  );
+[data-theme="light"] .hero__bg {
+  display: none;
+}
+
+[data-theme="light"] .hero__fx {
+  display: none;
 }
 
 .hero__bg img {
