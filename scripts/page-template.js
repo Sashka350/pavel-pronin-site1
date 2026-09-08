@@ -8,8 +8,8 @@ import { join } from 'node:path';
 // Базовый путь и адрес сайта (должны совпадать с vite.config.js).
 // Пока публикуем на GitHub Pages суб-путь; при кастомном домене задайте
 // BASE_PATH=/ и SITE_URL=https://pavelpronin.me
-const BASE = process.env.BASE_PATH || '/pavel-pronin-site/';
-const SITE = process.env.SITE_URL || 'https://sashka350.github.io/pavel-pronin-site';
+const BASE = process.env.BASE_PATH || '/pavel-pronin-site1/';
+const SITE = process.env.SITE_URL || 'https://sashka350.github.io/pavel-pronin-site1';
 
 function withBase(path) {
   return BASE + String(path).replace(/^\//, '');
@@ -122,7 +122,7 @@ export function head(opts) {
     '<meta name="viewport" content="width=device-width, initial-scale=1.0" />' +
     '<title>' + esc(opts.title) + '</title>' +
     '<meta name="description" content="' + esc(opts.description) + '" />' +
-    '<meta name="theme-color" content="#0a0a0a" />' +
+    '<meta name="theme-color" content="#0C0C0C" />' +
     '<link rel="canonical" href="' + SITE + opts.canonical + '" />' +
     '<meta property="og:type" content="' + (opts.ogType || 'website') + '" />' +
     '<meta property="og:title" content="' + esc(opts.title) + '" />' +
@@ -133,8 +133,8 @@ export function head(opts) {
     '<meta property="og:site_name" content="Павел Пронин" />' +
     '<link rel="preconnect" href="https://fonts.googleapis.com" />' +
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />' +
-    '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />' +
-    '<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' rx=\'12\' fill=\'%230a0a0a\'/%3E%3Ctext x=\'50\' y=\'68\' font-size=\'56\' font-family=\'Arial\' font-weight=\'bold\' fill=\'%23c8ff00\' text-anchor=\'middle\'%3EP%3C/text%3E%3C/svg%3E" />' +
+    '<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />' +
+    '<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' rx=\'12\' fill=\'%230C0C0C\'/%3E%3Ctext x=\'50\' y=\'68\' font-size=\'56\' font-family=\'Arial\' font-weight=\'bold\' fill=\'%23D4A843\' text-anchor=\'middle\'%3EP%3C/text%3E%3C/svg%3E" />' +
     (opts.jsonld ? '<script type="application/ld+json">' + JSON.stringify(opts.jsonld) + '</script>' : '')
   );
 }

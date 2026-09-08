@@ -1,6 +1,7 @@
 /* ==========================================================================
-   БАЗОВЫЕ СТИЛИ
+   БАЗОВЫЕ СТИЛИ v2
    Сброс, шрифты, общие элементы (кнопки, ссылки, контейнер).
+   Следуем правилам: НЕ Inter, ease-out для UI, scale(0.97) для кнопок.
    ========================================================================== */
 
 *,
@@ -64,15 +65,19 @@ h3,
 h4 {
   font-weight: 700;
   line-height: var(--leading-tight);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 h1 {
   font-size: var(--text-4xl);
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 h2 {
   font-size: var(--text-3xl);
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 h3 {
@@ -107,7 +112,7 @@ h3 {
   font-size: var(--text-lg);
 }
 
-/* --- Кнопки --- */
+/* --- Кнопки (Emil Kowalski: scale(0.97) на :active) --- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -124,6 +129,10 @@ h3 {
   white-space: nowrap;
 }
 
+.btn:active {
+  transform: scale(0.97);
+}
+
 .btn--primary {
   background-color: var(--accent);
   color: var(--accent-contrast);
@@ -132,7 +141,7 @@ h3 {
 .btn--primary:hover {
   background-color: var(--accent-hover);
   color: var(--accent-contrast);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .btn--outline {
@@ -179,16 +188,23 @@ h3 {
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow);
   border-color: var(--border);
 }
 
-/* --- Анимации при скролле --- */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+}
+
+/* --- Анимации при скролле (Emil Kowalski: only transform/opacity, ease-out) --- */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
 }
 
 .animate-on-scroll.animated {
@@ -205,5 +221,13 @@ h3 {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

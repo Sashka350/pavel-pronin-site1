@@ -1,5 +1,5 @@
 /* ==========================================================================
-   СТИЛИ КОНКРЕТНЫХ СТРАНИЦ
+   СТИЛИ КОНКРЕТНЫХ СТРАНИЦ v2
    ========================================================================== */
 
 /* --- Главная: блок педагогики (превью) --- */
@@ -11,6 +11,7 @@
 }
 
 .pedagogy-preview__title {
+  font-family: var(--font-display);
   font-size: var(--text-2xl);
   margin-bottom: 1rem;
 }
@@ -61,8 +62,9 @@
 }
 
 .page-head__title {
+  font-family: var(--font-display);
   font-size: var(--text-5xl);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
 }
@@ -107,6 +109,7 @@
 }
 
 .insc-item__title {
+  font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 600;
 }
@@ -145,8 +148,6 @@
   margin-bottom: 0;
 }
 
-/* Вторая фотография: рядом с текущей (2 колонки) на планшетах и десктопе,
-   стопкой на самых узких экранах. */
 @media (min-width: 768px) {
   .about__media {
     grid-template-columns: 1fr 1fr;
@@ -205,6 +206,10 @@
   border-color: var(--accent);
 }
 
+.chip:active {
+  transform: scale(0.97);
+}
+
 .chip.is-active {
   background-color: var(--accent);
   color: var(--accent-contrast);
@@ -224,14 +229,12 @@
   border-radius: var(--radius);
 }
 
-/* --- Планшет: каталог --- */
 @media (min-width: 640px) {
   .grid--catalog {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* --- Десктоп: каталог --- */
 @media (min-width: 1024px) {
   .grid--catalog {
     grid-template-columns: repeat(3, 1fr);
@@ -272,8 +275,9 @@
 }
 
 .perf-page__title {
+  font-family: var(--font-display);
   font-size: var(--text-5xl);
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
 }
@@ -322,6 +326,7 @@
 }
 
 .perf-page__section-title {
+  font-family: var(--font-display);
   font-size: var(--text-2xl);
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
@@ -397,12 +402,14 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  transition: transform var(--transition), opacity var(--transition);
+  transition: transform 0.4s var(--ease-out), opacity 0.4s var(--ease-out);
 }
 
-.gallery__link:hover img {
-  transform: scale(1.03);
-  opacity: 0.9;
+@media (hover: hover) and (pointer: fine) {
+  .gallery__link:hover img {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
 }
 
 @media (min-width: 768px) {
@@ -474,6 +481,10 @@
   color: var(--accent);
 }
 
+.lightbox__close:active {
+  transform: scale(0.95);
+}
+
 .lightbox__nav {
   position: absolute;
   top: 50%;
@@ -488,6 +499,10 @@
 
 .lightbox__nav:hover {
   color: var(--accent);
+}
+
+.lightbox__nav:active {
+  transform: translateY(-50%) scale(0.95);
 }
 
 .lightbox__nav--prev {

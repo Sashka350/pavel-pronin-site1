@@ -1,12 +1,18 @@
 /* ==========================================================================
-   ДИЗАЙН-СИСТЕМА
+   ДИЗАЙН-СИСТЕМА v2
    CSS custom properties для цветов, шрифтов, отступов, сетки.
    Тёмная тема — по умолчанию. Светлая — через [data-theme="light"].
+
+   Design dials:
+   - DESIGN_VARIANCE: 7 (asymmetric, theatrical flair)
+   - MOTION_INTENSITY: 6 (cinematic reveals)
+   - VISUAL_DENSITY: 3 (gallery-like spaciousness)
    ========================================================================== */
 
 :root {
   /* --- Типографика --- */
-  --font-body: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Space Grotesk', 'Segoe UI', Roboto, Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
 
   --text-xs: 0.75rem;
@@ -36,9 +42,13 @@
   --bp-desktop: 1024px;
   --bp-wide: 1280px;
 
-  /* --- Переходы --- */
-  --transition: 0.3s ease;
-  --transition-fast: 0.15s ease;
+  /* --- Переходы (Emil Kowalski easing) --- */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --transition: 0.3s var(--ease-out);
+  --transition-fast: 0.15s var(--ease-out);
+  --transition-slow: 0.5s var(--ease-out);
 
   /* --- Слои (z-index) --- */
   --z-header: 100;
@@ -46,34 +56,34 @@
   --z-lightbox: 300;
 
   /* --- Тёмная тема (по умолчанию) --- */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #141414;
-  --bg-tertiary: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --text-muted: #666666;
-  --accent: #c8ff00;
-  --accent-hover: #b0e000;
-  --accent-contrast: #0a0a0a;
-  --border: #2a2a2a;
+  --bg-primary: #0C0C0C;
+  --bg-secondary: #161616;
+  --bg-tertiary: #222222;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A3A3A3;
+  --text-muted: #6B6B6B;
+  --accent: #D4A843;
+  --accent-hover: #E0BC5E;
+  --accent-contrast: #0C0C0C;
+  --border: #2A2A2A;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  --header-bg: rgba(10, 10, 10, 0.8);
-  --muted-bg: #141414;
+  --header-bg: rgba(12, 12, 12, 0.85);
+  --muted-bg: #161616;
 }
 
 /* --- Светлая тема --- */
 [data-theme="light"] {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f5;
-  --bg-tertiary: #ebebeb;
-  --text-primary: #0a0a0a;
-  --text-secondary: #555555;
+  --bg-primary: #FAFAF8;
+  --bg-secondary: #F0F0EC;
+  --bg-tertiary: #E6E6E0;
+  --text-primary: #1A1A1A;
+  --text-secondary: #5A5A5A;
   --text-muted: #999999;
-  --accent: #00aa00;
-  --accent-hover: #008800;
-  --accent-contrast: #ffffff;
-  --border: #e0e0e0;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  --header-bg: rgba(255, 255, 255, 0.85);
-  --muted-bg: #f5f5f5;
+  --accent: #B8922E;
+  --accent-hover: #9A7A24;
+  --accent-contrast: #FAFAF8;
+  --border: #D8D8D0;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --header-bg: rgba(250, 250, 248, 0.88);
+  --muted-bg: #F0F0EC;
 }

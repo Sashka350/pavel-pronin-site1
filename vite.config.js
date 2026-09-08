@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // Базовый путь для GitHub Pages суб-пути (https://<user>.github.io/pavel-pronin-site/).
 // Когда появится кастомный домен (pavelpronin.me) — задайте BASE_PATH=/ .
-const basePath = process.env.BASE_PATH || '/pavel-pronin-site/';
+const basePath = process.env.BASE_PATH || '/pavel-pronin-site1/';
 
 export default defineConfig({
   root: '.',

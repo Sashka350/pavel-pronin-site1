@@ -1,6 +1,7 @@
 /* ==========================================================================
-   КОМПОНЕНТЫ
+   КОМПОНЕНТЫ v2
    Карточки спектаклей, анонсы, формы, медиа.
+   Дизайн-дайлы: VARIANCE=7, MOTION=6, DENSITY=3
    ========================================================================== */
 
 /* --- Карточка спектакля / проекта --- */
@@ -8,7 +9,7 @@
   display: block;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   color: inherit;
   transition: transform var(--transition), box-shadow var(--transition),
@@ -16,10 +17,14 @@
 }
 
 .perf-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
   border-color: var(--accent);
   color: inherit;
+}
+
+.perf-card:active {
+  transform: scale(0.98);
 }
 
 .perf-card__media {
@@ -31,11 +36,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition);
+  transition: transform 0.5s var(--ease-out);
 }
 
-.perf-card:hover .perf-card__media img {
-  transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+  .perf-card:hover .perf-card__media img {
+    transform: scale(1.04);
+  }
 }
 
 .perf-card__body {
@@ -46,6 +53,7 @@
   font-size: var(--text-lg);
   font-weight: 600;
   margin-bottom: 0.25rem;
+  font-family: var(--font-display);
 }
 
 .perf-card__theater {
@@ -88,14 +96,18 @@
   padding: 1.5rem;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   border-left: 3px solid var(--accent);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .event-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow);
+}
+
+.event-card:active {
+  transform: scale(0.98);
 }
 
 .event-card__date {
@@ -109,6 +121,7 @@
 .event-card__title {
   font-size: var(--text-lg);
   font-weight: 600;
+  font-family: var(--font-display);
 }
 
 .event-card__place {
@@ -153,13 +166,14 @@
   color: var(--text-primary);
   font-family: inherit;
   font-size: var(--text-base);
-  transition: border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .form__input:focus,
 .form__textarea:focus {
   outline: none;
   border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(212, 168, 67, 0.15);
 }
 
 /* --- Социальные ссылки --- */
@@ -181,12 +195,16 @@
   font-size: var(--text-sm);
   padding: 0.5rem;
   border-radius: var(--radius);
-  transition: color var(--transition), background-color var(--transition);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .social-link:hover {
   color: var(--accent);
   background-color: var(--bg-tertiary);
+}
+
+.social-link:active {
+  transform: scale(0.95);
 }
 
 .social-link svg {

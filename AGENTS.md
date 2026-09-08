@@ -1,4 +1,4 @@
-# Инструкции для работающего агента (opencode)
+﻿# Инструкции для работающего агента (opencode)
 
 Этот файл читается при каждом запуске сессии в этой папке. Соблюдай его всегда.
 
@@ -23,12 +23,12 @@
 
 ## Публикация
 
-- Публичный сайт: https://sashka350.github.io/pavel-pronin-site/
-- Репозиторий: https://github.com/Sashka350/pavel-pronin-site (public)
+- Публичный сайт: https://sashka350.github.io/pavel-pronin-site1/
+- Репозиторий: https://github.com/Sashka350/pavel-pronin-site1 (public)
 - Автодеплой: push в `main` → GitHub Actions собирает и публикует на Pages.
-- Базовый путь = `/pavel-pronin-site/` (задан в `vite.config.js` через `BASE_PATH`).
+- Базовый путь = `/pavel-pronin-site1/` (задан в `vite.config.js` через `BASE_PATH`).
   В коде используй `import.meta.env.BASE_URL` (JS) и `withBase()` (генераторы).
-  НЕ вписывай вручную жёсткие пути `/pavel-pronin-site/` в новые места —
+  НЕ вписывай вручную жёсткие пути `/pavel-pronin-site1/` в новые места —
   используй переменные базы. В статических HTML внутренние ссылки уже
   префиксованы base-путем.
 - Адрес сайта для canonical/og/sitemap задаётся через `SITE_URL` в
