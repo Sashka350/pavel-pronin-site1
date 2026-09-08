@@ -155,6 +155,11 @@ h3 {
   color: var(--accent-contrast);
 }
 
+.btn--telegram svg {
+  width: 20px;
+  height: 20px;
+}
+
 .btn--lg {
   padding: 0.9rem 2rem;
   font-size: var(--text-lg);

@@ -79,9 +79,9 @@ export function header(active, enPath) {
     '<a href="' + withBase('/') + '" class="header__logo" data-type-cycle data-type-motion data-type="0">Павел Пронин</a>' +
     '<nav class="header__nav" aria-label="Основная навигация"><ul>' + navLinks(active) + '</ul></nav>' +
     '<div class="header__actions">' +
-    themeToggle() +
     telegramLink() +
     langLink('/en/', 'EN') +
+    themeToggle() +
     '<button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>' +
     '</div>' +
     '</div>' +

@@ -331,8 +331,149 @@ body.nav-open {
   object-fit: cover;
 }
 
+/* --- Фоновая анимация hero (только главная страница) --- */
+.hero__fx {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__fx .fx-smoke {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  will-change: transform, opacity;
+}
+
+.hero__fx .fx-smoke--a {
+  width: 58vw;
+  height: 58vw;
+  left: -14vw;
+  bottom: -18vw;
+  background: radial-gradient(
+    circle,
+    rgba(212, 168, 67, 0.16) 0%,
+    rgba(212, 168, 67, 0) 62%
+  );
+  animation: fx-drift-a 28s var(--ease-in-out) infinite alternate;
+}
+
+.hero__fx .fx-smoke--b {
+  width: 48vw;
+  height: 48vw;
+  top: -14vw;
+  right: -10vw;
+  background: radial-gradient(
+    circle,
+    rgba(96, 96, 96, 0.4) 0%,
+    rgba(12, 12, 12, 0) 66%
+  );
+  animation: fx-drift-b 34s var(--ease-in-out) infinite alternate-reverse;
+}
+
+.hero__fx .fx-spot {
+  position: absolute;
+  top: -12%;
+  left: 50%;
+  width: 46vw;
+  height: 70vh;
+  transform: translateX(-50%);
+  background: conic-gradient(
+    from 180deg at 50% 0%,
+    rgba(212, 168, 67, 0) 0deg,
+    rgba(212, 168, 67, 0.18) 24deg,
+    rgba(212, 168, 67, 0) 52deg
+  );
+  transform-origin: 50% 0%;
+  opacity: 0.35;
+  animation: fx-spot-breathe 12s var(--ease-in-out) infinite;
+}
+
+[data-theme="light"] .hero__fx .fx-smoke--b {
+  background: radial-gradient(
+    circle,
+    rgba(70, 70, 70, 0.28) 0%,
+    rgba(250, 250, 248, 0) 66%
+  );
+}
+
+[data-theme="light"] .hero__fx .fx-smoke--a {
+  background: radial-gradient(
+    circle,
+    rgba(184, 146, 46, 0.14) 0%,
+    rgba(184, 146, 46, 0) 62%
+  );
+}
+
+[data-theme="light"] .hero__fx .fx-spot {
+  background: conic-gradient(
+    from 180deg at 50% 0%,
+    rgba(184, 146, 46, 0) 0deg,
+    rgba(184, 146, 46, 0.16) 24deg,
+    rgba(184, 146, 46, 0) 52deg
+  );
+}
+
+@keyframes fx-drift-a {
+  from {
+    transform: translate3d(-4%, 3%, 0) scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate3d(10%, -5%, 0) scale(1.18);
+    opacity: 0.8;
+  }
+}
+
+@keyframes fx-drift-b {
+  from {
+    transform: translate3d(5%, -4%, 0) scale(1.05);
+    opacity: 0.45;
+  }
+  to {
+    transform: translate3d(-7%, 5%, 0) scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@keyframes fx-spot-breathe {
+  0%, 100% {
+    opacity: 0.28;
+    transform: translateX(-50%) scaleY(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50%) scaleY(1.07);
+  }
+}
+
+/* На мобильных фоновую анимацию отключаем */
+@media (max-width: 768px) {
+  .hero__fx {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__fx .fx-smoke,
+  .hero__fx .fx-spot {
+    animation: none;
+    opacity: 0.35;
+  }
+}
+
 .hero__content {
+  position: relative;
+  z-index: 1;
   max-width: 640px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .hero__overline {
