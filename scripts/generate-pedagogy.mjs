@@ -82,6 +82,7 @@ function page(p, lang) {
   const opts = {
     active: 'pedagogy',
     enPath: '/en/pedagogy/',
+    ruPath: isEn ? '/pedagogy/' + p.slug + '/' : undefined,
     title: title + (isEn ? ' — Pedagogy · Pavel Pronin' : ' — Педагогика · Павел Пронин'),
     description: title + (isEn
       ? '. Pedagogical project of Pavel Pronin.' + (place ? ' ' + place + '.' : '')

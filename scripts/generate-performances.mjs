@@ -155,6 +155,7 @@ function page(p, lang) {
   const opts = {
     active: 'performances',
     enPath: '/en/performances/' + p.slug + '/',
+    ruPath: isEn ? '/performances/' + p.slug + '/' : undefined,
     title: title + (isEn ? ' — Pavel Pronin' : ' — Павел Пронин'),
     description: title + '. ' + theater + (isEn ? '. Director Pavel Pronin.' : '. Режиссёр Павел Пронин.'),
     ogDescription: theater,

@@ -86,7 +86,8 @@ function themeToggle() {
   );
 }
 
-export function header(active) {
+export function header(active, ruPath) {
+  const ruHref = ruPath ? withBase(ruPath) : withBase('/');
   return (
     '<header class="header">' +
     '<div class="container header__inner">' +
@@ -94,8 +95,7 @@ export function header(active) {
     '<nav class="header__nav" aria-label="Main navigation"><ul>' + navLinks(active) + '</ul></nav>' +
     '<div class="header__actions">' +
     telegramLink() +
-    '<a class="lang-link is-active" href="' + withEn('/') + '" aria-label="Russian version">EN</a>' +
-    '<a class="lang-link" href="' + withBase('/') + '" aria-label="Russian version">RU</a>' +
+    '<a class="lang-link is-active" href="' + ruHref + '" aria-label="Russian version">RU</a>' +
     themeToggle() +
     '<button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>' +
     '</div>' +
@@ -154,7 +154,7 @@ export function head(opts) {
   );
 }
 
-export function wrapHtml({ active, canonical, title, description, ogImage, ogDescription, ogType, jsonld, body, jsSrc, cssHref }) {
+export function wrapHtml({ active, ruPath, canonical, title, description, ogImage, ogDescription, ogType, jsonld, body, jsSrc, cssHref }) {
   return (
     '<!DOCTYPE html>\n' +
     '<html lang="en" data-theme="dark">\n' +
@@ -163,7 +163,7 @@ export function wrapHtml({ active, canonical, title, description, ogImage, ogDes
     '<link rel="stylesheet" href="' + cssHref + '" />' +
     '</head>' +
     '<body>' +
-    header(active) +
+    header(active, ruPath) +
     '<main>' + body + '</main>' +
     footer() +
     '<script type="module" src="' + jsSrc + '"></script>' +
