@@ -101,7 +101,7 @@ export function footer(enPath) {
     '<a href="' + withBase('/#about') + '">Обо мне</a><a href="' + withBase('/performances/') + '">Спектакли</a><a href="' + withBase('/pedagogy/') + '">Педагогика</a><a href="' + withBase('/inscenizations/') + '">Инсценировки</a>' +
     '</div></div>' +
     '<div class="footer__col"><div class="footer__col-title">Контакты</div><div class="footer__links">' +
-    '<a href="mailto:pavel.pronin1986@gmail.com">pavel.pronin1986@gmail.com</a>' +
+    '<span>pavel.pronin1986@gmail.com</span>' +
     '<a href="tel:+79165671554">+7 916 567 15 54</a>' +
     '<a href="https://vk.com/pashapronin" target="_blank" rel="noopener">VK</a>' +
     '<a href="https://t.me/pashapronin" target="_blank" rel="noopener">Telegram</a>' +

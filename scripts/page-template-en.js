@@ -116,7 +116,7 @@ export function footer() {
     '<a href="' + withEn('/#about') + '">About</a><a href="' + withEn('/performances/') + '">Performances</a><a href="' + withEn('/pedagogy/') + '">Pedagogy</a><a href="' + withEn('/inscenizations/') + '">Stagings</a>' +
     '</div></div>' +
     '<div class="footer__col"><div class="footer__col-title">Contacts</div><div class="footer__links">' +
-    '<a href="mailto:pavel.pronin1986@gmail.com">pavel.pronin1986@gmail.com</a>' +
+    '<span>pavel.pronin1986@gmail.com</span>' +
     '<a href="tel:+79165671554">+7 916 567 15 54</a>' +
     '<a href="https://vk.com/pashapronin" target="_blank" rel="noopener">VK</a>' +
     '<a href="https://t.me/pashapronin" target="_blank" rel="noopener">Telegram</a>' +
