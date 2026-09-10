@@ -50,20 +50,6 @@
   min-width: 0;
 }
 
-/* На мобильных и планшетах анимация типографики логотипа отключена */
-@media (max-width: 1023px) {
-  .header__logo {
-    width: auto;
-    justify-content: flex-start;
-    font-family: var(--font-display) !important;
-    font-weight: 600 !important;
-    text-transform: none !important;
-    letter-spacing: 0.01em !important;
-    font-style: normal !important;
-    transform: none !important;
-  }
-}
-
 /* На десктопе резервируем постоянный размер контейнера логотипа */
 @media (min-width: 1024px) {
   .header__logo {
