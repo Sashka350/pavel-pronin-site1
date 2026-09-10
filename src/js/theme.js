@@ -1,7 +1,7 @@
 /**
  * theme.js — переключатель тёмной/светлой темы.
  * 1. Проверяем localStorage('theme').
- * 2. Если нет — используем системную через prefers-color-scheme.
+ * 2. Если нет — по умолчанию тёмная тема.
  * 3. По клику переключаем data-theme на <html>.
  * 4. Сохраняем выбор в localStorage.
  * 5. Обновляем атрибут color-scheme для нативных контролов.
@@ -15,9 +15,7 @@
     if (stored === 'dark' || stored === 'light') {
       return stored;
     }
-    return window.matchMedia('(prefers-color-scheme: light)').matches
-      ? 'light'
-      : 'dark';
+    return 'dark';
   }
 
   function applyTheme(theme) {
@@ -43,13 +41,4 @@
 
   // Инициализация ДО рендера, чтобы не было "вспышки" неверной темы.
   setTheme(getInitialTheme(), false);
-
-  // Реагируем на смену системной темы, если пользователь не выбирал свою.
-  window
-    .matchMedia('(prefers-color-scheme: light)')
-    .addEventListener('change', function (e) {
-      if (!localStorage.getItem(STORAGE_KEY)) {
-        applyTheme(e.matches ? 'light' : 'dark');
-      }
-    });
 })();
