@@ -1,0 +1,185 @@
+TEXTS OF THE WEBSITE — ENGLISH VERSION
+Website of Pavel Pronin ("Site 1"), collected on 09.09.2026.
+Order: home → performances → pedagogy → stagings.
+
+==================================================
+1. HOME PAGE (en/index.html)
+==================================================
+
+Browser tab title: Pavel Pronin — Theater Director & Teacher
+
+— Header and navigation —
+Logo: Pavel Pronin
+Menu: About · Performances · Pedagogy · Stagings
+
+— Hero —
+Director · Teacher · Researcher
+Pavel Pronin
+Theater director and teacher
+Graduate of Anatoly Vasilyev's studio. Plays staged across Russia, teaching at GITIS.
+Buttons: "Get in touch", "I talk about art on Telegram"
+Socials: VK · Telegram
+
+— About —
+Lead text: Theater director and teacher. Graduate of Anatoly Vasilyev's studio, teaches at GITIS. Stages plays across Russia, leads seminars and educational projects, and pursues theater-studies research.
+
+Biography:
+I treat theater as a living space rather than a workshop for producing spectacle: here the text, the actor and the audience meet for the first time, and the interest lies in what happens at the moment of that meeting — when meaning has not yet set, when a word is only just becoming an action.
+For me, directing is not about instructions and results, but about creating the conditions for a meeting: between a person and a text, between an actor and his own material. At the center of my work is a slow, almost laboratory process with the actor — with his body, voice and inner freedom.
+My path was shaped by my apprenticeship with Anatoly Vasilyev. It is less a toolkit of specific devices than a way of holding the stage: rigorous, attentive to detail, and at the same time open to improvisation.
+
+Education:
+Studio — Anatoly Vasilyev
+University — Russian Institute of Theatre Arts — GITIS
+
+Experience:
+Directing — More than 25 productions in Russian theaters — see Performances
+Pedagogy — GITIS, YGITI, EASI, the school of Anatoly Vasilyev's disciples — see Pedagogy
+
+Research:
+I am working on the legacy of Anatoly Vasilyev's "theater grammar" — trying to understand how the movement from text to stage is organized: what decisions an actor makes, how a stage situation is born, and what in this process can be articulated and what remains unutterable.
+Reports, articles and working materials will appear in the section "Theater Studies".
+
+— Performances (preview) —
+Lead text: Recent and current work. The full list is available in Russian.
+1. "Pomni" — Krasnodar Youth Theatre — On stage — 2024
+2. "Woe from Wit" — Krasnodar Youth Theatre — On stage — 2024
+3. "Retro" — Khabarovsk Youth Theatre — Archive — 2024
+4. "Kalle Blomkvist" — Vedogon Theatre — Archive — 2023
+5. "Starfall" — Bashkortostan Russian Drama Theatre — Archive — 2023
+6. "Scarlet Sails" — Altai Youth Theatre — Archive — 2023
+Link: All performances →
+
+— Pedagogy (preview) —
+My pedagogical approach is an unbroken path from K. S. Stanislavsky to M. O. Knebel, and from her on to Anatoly Vasilyev.
+Link: Learn more →
+
+— Contacts —
+Lead text: Get in touch about productions and educational projects.
+pavel.pronin1986@gmail.com
++7 916 567 15 54
+VK · Telegram
+
+— Footer —
+Pavel Pronin: About · Performances · Pedagogy · Stagings
+Contacts: pavel.pronin1986@gmail.com · +7 916 567 15 54 · VK · Telegram
+Language: Русская версия
+© 2026 Pavel Pronin
+Director · Teacher · Researcher
+
+==================================================
+2. PERFORMANCES (section performances/)
+==================================================
+
+Browser tab title: Performances — Pavel Pronin
+
+— Catalog heading —
+Performances
+Lead text: All productions from 12 years of work. Those currently in the repertoire are marked — along with information about the current season.
+
+— Filters —
+All · In the repertoire · Archive
+
+— Performances catalog (28 items, from newest to oldest) —
+1. "Five Spoons of Elixir" · based on the screenplay by A. and B. Strugatsky · Moscow Et Cetera Theatre · 2024 · Archive
+2. "The Magic Nut. The Story of the Nutcracker" · after E. T. A. Hoffmann · Chuvash Youth Theatre named after M. Sespel · 2024 · Archive
+3. "Remember" · a dedication performance · Krasnodar Youth Theatre · 2024 · On stage
+4. "Woe from Wit" · A. S. Griboyedov · Krasnodar Youth Theatre · 2024 · On stage
+5. "Retro" · A. Galin · Khabarovsk Youth Theatre · 2024 · Archive
+6. "Kalle Blomkvist — Super Sleuth!" · based on the works of A. Lindgren · Vedogon Theatre (Zelenograd, Moscow) · 2023 · Archive
+7. "Starfall" · based on the novella of the same name by V. P. Astafyev · Bashkortostan Russian Drama Theatre, Ufa · 2023 · Archive
+8. "Scarlet Sails" · P. Morozov after A. Green · Altai Youth Theatre · 2023 · Archive
+9. "Mom, I'm a Blogger!" · a sketch by A. Strizhevskaya · "Open Rehearsal" project of the Moscow Taganka Theatre · 2022 · Archive
+10. "The Three Fat Men" · based on the children's novel of the same name by Y. Olesha · Altai Youth Theatre · 2022 · Archive
+11. "Theatre Story" · Moscow Regional Drama and Comedy Theatre · 2022 · Archive
+12. "Baba Yaga against Evil" · Y. Bocharova · Moscow Regional Drama and Comedy Theatre · 2022 · Archive
+13. "Baba Yaga's Happiness" · Y. Bocharova · Moscow Regional Drama and Comedy Theatre · 2022 · Archive
+14. "The Wizard of the Emerald City" · A. Bogachyova after the fairy-tale novel by A. Volkov · Yekaterinburg Youth Theatre · 2021 · Archive
+15. "Retro" · A. Galin · Yekaterinburg Youth Theatre · 2021 · Archive
+16. "The Golden Key" · A. N. Tolstoy · Yekaterinburg Youth Theatre · 2021 · Archive
+17. "Warsaw Melody" · L. G. Zorin · GITIS Training Theatre · 2021 · Archive
+18. "The Nutcracker" · E. T. A. Hoffmann · Sevastopol Academic Drama Theatre named after A. V. Lunacharsky · 2021 · Archive
+19. "Timur and His Team" · A. P. Gaidar · Yekaterinburg Youth Theatre · 2021 · Archive
+20. "Back to Murder" · A. Christie · Koleso Drama Theatre · 2021 · Archive
+21. "The Star-Child" · O. Wilde · Koleso Drama Theatre · 2021 · Archive
+22. "The Parodist" · E. Vodolazkin · Koleso Drama Theatre · 2021 · Archive
+23. Musical "A City in Love" · Koleso Drama Theatre · 2021 · Archive
+24. "The Comedy of Errors" · W. Shakespeare · National Drama Theatre named after B. Basangov · 2021 · Archive
+25. "Zoyka's Apartment" · M. A. Bulgakov · National Academic Drama Theatre named after Gorky · 2021 · Archive
+26. "Stars Shine on the Ceiling" · J. Tidholm · Krasnodar Youth Theatre · 2021 · Archive
+27. "Gagarin's Way" · G. Burke · Russian Theatre of Estonia · 2021 · Archive
+28. "Boyhood" · Y. Pulinovich after L. N. Tolstoy · GITIS Directing Department · 2021 · Archive
+
+When the filter finds nothing: Nothing found. Change the filter settings.
+
+— Structure of a single performance page (for each of the 28) —
+Also shown: title, status (On stage / Archive), year, photo.
+Back link: All performances. Sections (currently — temporary placeholders, identical on all pages):
+About the play: A description will appear once the director provides the texts.
+Details: Premiere — To be confirmed. Team — The creative team will be added.
+Press: Press materials will be added.
+Video: Video recordings will be added.
+Photos: — poster
+
+==================================================
+3. PEDAGOGY (section pedagogy/)
+==================================================
+
+Browser tab title: Pedagogy — Pavel Pronin
+
+— Section heading —
+Pedagogy
+Lead text:
+I build my practice as an unbroken path from K. S. Stanislavsky to M. O. Knebel, and from her on to Anatoly Vasilyev, in whose studio I studied. This also shapes my approach to working with students: attention to "theatre grammar", to craft and to a living dialogue with the text.
+
+— Pedagogical projects (10 items) —
+1. Summer School · 2026
+2. School of Anatoly Vasilyev's Disciples · 2025 — present
+3. Russian Institute of Theatre Arts — GITIS · 2024 — present · Moscow
+4. Yekaterinburg State Theatre Institute (EGTI) · 2020 — 2023 · Yekaterinburg
+5. Yekaterinburg Academy of Contemporary Art (EASI) · 2020 — 2021 · Yekaterinburg
+6. Russian Institute of Theatre Arts — GITIS · 2016 — 2018 · Moscow
+7. Estonian Center AITA/IATA · 2016 · Tallinn, Estonia
+8. Theatre Studio "Fan and Sword" · 2015 · Maardu, Estonia
+9. Youth Theatre Studio Respect · August 2012 · Karabash
+10. Youth Theatre KAZUS · 2012 — 2014
+
+When the list is empty: Project texts will be added once materials are received from the director.
+
+— Structure of a single project page (for each of the 10) —
+Back link: All projects. Sections (currently — temporary placeholders, identical on all pages):
+About the project: A description of the project will appear once the director provides the materials.
+Details: Period · City
+
+==================================================
+4. STAGE ADAPTATIONS (section inscenizations/)
+==================================================
+
+Browser tab title: Stage Adaptations — Pavel Pronin
+
+— Section heading —
+Stage Adaptations
+Lead text:
+Works of transforming prose into a stage text. Excerpts from each adaptation are available to read. The mechanism for showing the texts (Yandex.Disk / reading on the site) is being finalized.
+
+— List of stage adaptations (11 items) —
+1. "The Chronicles of Narnia: The Magician's Nephew" · after C. S. Lewis
+2. "Stars Shine on the Ceiling" · after J. Tidholm
+3. "Cynics" · after A. Marienhof
+4. "Timur and His Team" · after A. P. Gaidar
+5. "The Golden Key" · after A. N. Tolstoy
+6. "The Nutcracker" · after E. T. A. Hoffmann
+7. "The Three Fat Men" · after Y. K. Olesha
+8. "The Adolescent" · after F. M. Dostoevsky
+9. "Boule de Suif" · after Guy de Maupassant
+10. "The Captain's Daughter" · after A. S. Pushkin
+11. "The Boy with a Sword" · after V. P. Krapivin
+
+==================================================
+FOOTER (identical on all EN pages)
+==================================================
+Pavel Pronin: Performances · Pedagogy · Stagings (on the home page plus "About")
+Contacts: pavel.pronin1986@gmail.com · +7 916 567 15 54 · VK · Telegram
+Language: Русская версия
+© 2026 Pavel Pronin
+Director · Teacher · Researcher
